@@ -1,0 +1,81 @@
+   /*
+    Startside, hvor vi kan velge karakter med stats.
+    Egen side for å møte fiender. Finne ny fiende.
+    Game over / win screen.
+  
+    lik if u cry evrytim
+    Noe her
+
+  Danica`s OP stuff!
+           
+    Game Object
+        
+        Example:
+        class GameObject 
+        {
+            constructor(x, y, width, height, color, speed, str, int, endurance){
+                 this.x = x;
+                 this.y = y;
+                 this.width = width;
+                 this.height = height;
+                 this.color = color;
+                 this.speed = speed;
+                 this.maxSpeed = some number;
+                 this.str = str;
+                 this.int = int;
+                 this.endurance = endurance;
+             }
+        }
+        
+        
+       
+
+        //Noe annet her
+
+        //Control of the character
+
+        //Update movement function
+        
+     var step = function()
+     {
+            //drawing sprites function here
+            //Update function her
+         window.requestAnimationFrame(step);
+     } *\
+
+         Noe rart som sorterer races.object ||
+
+   /* function listRaces(){
+    let i =0;
+    let runTime = races.length;
+    while (i < runTime) {
+        document.getElementById('app').innerHTML +=`Race: ${races[i].name}<br>
+        Strength: ${races[i].str}<br>
+        Intellect: ${races[i].int}<br>
+        Endurance: ${races[i].endurance}<br><br>`
+        i++;
+    }
+   /*
+     <li> Race: ${races[0].name}
+     Strength: ${races[0].str}
+     Intellect: ${races[0].int}
+     Endurance: ${races[0].endurance}
+
+    document.getElementById('app').innerHTML +=`
+    <li>${races[i]}   ` */
+//Controller
+// let playerMoves = {
+//     calcAttack: function() {
+//         //angriper først
+//         let getPlayerSpeed = player.speed;
+        
+//         let getEnemySpeed = enemy.speed;
+//     }
+//     //player angriper
+//     let playerAttack = function() {
+//      let calcBaseDamage;
+//      if (player.agility> 0){
+//          calcBaseDamage = player.strangth * player.agility / 1000;
+//      }
+//     }
+// }

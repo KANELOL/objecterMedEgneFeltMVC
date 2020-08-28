@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+
+    </title>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/view.js"></script>
+    <style>
+        table, tr, td, th {
+            border: 1px solid lightgray;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 4px;
+        }
+
+        th {
+            background-color: darkblue;
+            border: 1px solid darkblue;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: antiquewhite;
+        }
+    </style>
+</head>
+<body onload="loadController(), show()">
+<input type="date"/>
+Oppgaver
+<ol>
+    <li>
+        Legg til person. Må kunne angis når man lager ny oppgave og må
+        kunne redigeres
+    </li>
+    <li>Legg til kolonne for frist. Bruk input-tag med type="date".
+        Konvertering til visningsformat: <tt>new Date("2019-02-13").toLocaleDateString()</tt>
+    </li>
+    <li>Lag kolonne for "gjort dato" som fylles ut automatisk når man 
+        trykker på checkboxen for at det er gjort.</li>
+
+
+</ol>
+<table id="tasksTable"></table>
+<br>
+<div>Task: <input id="taskDescription" type="text" value="Oppgave"/></div>
+<br>
+<div>Name: <input id="nameDescription" type="text" value="Navn"/></div>
+<br>
+<div>Date: <input id="dateDescription" type="date"/></div><br>
+<button onclick="addTask()">Legg til oppgave</button>
+</p>
+</body>
+</html>
